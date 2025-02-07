@@ -1,20 +1,20 @@
 ESP8266_IoT.MqttEvent("myhome/tutor/remote-control", ESP8266_IoT.QosList.Qos2, function (message) {
     if (message == "1-ON") {
-        pins.digitalWritePin(DigitalPin.P3, 1)
+        pins.digitalWritePin(DigitalPin.P1, 1)
     } else if (message == "2-ON") {
-        pins.digitalWritePin(DigitalPin.P4, 1)
+        pins.digitalWritePin(DigitalPin.P2, 1)
     } else if (message == "3-ON") {
-        pins.digitalWritePin(DigitalPin.P5, 1)
+        pins.digitalWritePin(DigitalPin.P3, 1)
     } else if (message == "4-ON") {
-        pins.digitalWritePin(DigitalPin.P6, 1)
+        pins.digitalWritePin(DigitalPin.P4, 1)
     } else if (message == "1-OFF") {
-        pins.digitalWritePin(DigitalPin.P3, 0)
+        pins.digitalWritePin(DigitalPin.P1, 0)
     } else if (message == "2-OFF") {
-        pins.digitalWritePin(DigitalPin.P4, 0)
+        pins.digitalWritePin(DigitalPin.P2, 0)
     } else if (message == "3-OFF") {
-        pins.digitalWritePin(DigitalPin.P5, 0)
+        pins.digitalWritePin(DigitalPin.P3, 0)
     } else if (message == "4-OFF") {
-        pins.digitalWritePin(DigitalPin.P6, 0)
+        pins.digitalWritePin(DigitalPin.P4, 0)
     }
 })
 basic.showNumber(0)
